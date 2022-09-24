@@ -4,7 +4,7 @@ public class Main {
     public static int distance (int deliveryDistance, int deliveryPerFirstDay, int deliveryNextDays, int daysForDeliveryAfter20km){
         int day = 1;
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется 1 день, чтобы доставить карту");
+            System.out.println("Птребуется 1 день, чтобы доставить карту");
             return day;
         } else if(deliveryDistance > 20 && (deliveryDistance - deliveryPerFirstDay) % deliveryNextDays == 0) {
             System.out.println("Потребуется " + daysForDeliveryAfter20km + " дней(я), чтобы доставить карту");
